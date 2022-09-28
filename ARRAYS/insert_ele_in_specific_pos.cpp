@@ -49,7 +49,7 @@ return 0;
 
 
 
-// Insert an element only 1 time in specific index in array
+// Insert an element only 1 time by swapping its specific index in array
 #include <iostream>
 using namespace std;
 
@@ -66,33 +66,41 @@ int arr[arr_size];
 
 // Element inserted in array & Displayed
 for(int i=0; i<arr_size; i++)
-{
+ {
  cin>>arr[i];
-}
+ }
 for(int i=0; i<arr_size; i++)
-{
+ {
  cout<<arr[i]<<" ";
-}
+ }
 cout<<"\n";
 
-// Pending Code
+
+
+
+
 // Element inserted in specific index of array given by user.
-cout<<"\nEnter the 'Specific Index' Value of Array\n";
+cout<<"\nEnter the 'Specific Position' Value of Array\n";
 cin>>spec_index;
 cout<<"\nEnter the 'Element Value' to Insert\n";
 cin>>ele_value;
-for(int i=arr_size-1; i>=spec_index-1; i--)
-{
- arr[i+1]=arr[i];
-}
-arr[spec_index-1]=ele_value;
-arr_size++;
+for(int i=arr_size-1; i>=spec_index-1; i--) // making position as index for ex - position 2-1=1 index
+ {
+ arr[i+1]=arr[i]; // shifting index value >>
+ }
+arr_size++; // first increase Size of array
+arr[spec_index-1]=ele_value; // then put element inside array
+
+
+
+
 
 // Element Displayed after Changed from Specific position
 cout<<"\nPrinting Changed Elements\n";
 for(int i=0; i<arr_size; i++)
-{
+ {
  cout<<arr[i]<<" ";
-}
+ }
 return 0;
 }
+  
