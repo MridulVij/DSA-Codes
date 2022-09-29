@@ -1,4 +1,4 @@
-// Status = Pending
+// Status = Working
 
 // Start Insert an element in specific index 
 #include <iostream>
@@ -75,11 +75,8 @@ for(int i=0; i<arr_size; i++)
  }
 cout<<"\n";
 
-
-
-
-
 // Element inserted in specific index of array given by user.
+// (Sol - it requires (i>=spec_index-1) & arr[i+1]=arr[i] )
 cout<<"\nEnter the 'Specific Position' Value of Array\n";
 cin>>spec_index;
 cout<<"\nEnter the 'Element Value' to Insert\n";
@@ -90,10 +87,6 @@ for(int i=arr_size-1; i>=spec_index-1; i--) // making position as index for ex -
  }
 arr_size++; // first increase Size of array
 arr[spec_index-1]=ele_value; // then put element inside array
-
-
-
-
 
 // Element Displayed after Changed from Specific position
 cout<<"\nPrinting Changed Elements\n";
