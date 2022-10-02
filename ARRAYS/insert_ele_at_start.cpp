@@ -1,5 +1,4 @@
-
- // Program to Insert Elememt in Array (Insertion in Array) 
+// Program to Insert Elememt in Array (Insertion in Array) 
 #include<iostream>
 using namespace std;
 
@@ -22,11 +21,8 @@ for(int i=0; i<size; i++)
  }
 cout<<"\n";
 
-// Inserting Element for End Position in Array
-for(int i=size; i<=size; i++)
- {
-  cin>>ele;
- }
+// Inputing Element to Insert in First Position of Array
+cin>>ele;
 
 // Element inserted Successfully
 for(int i=size-1; i<=size-1; i++)
