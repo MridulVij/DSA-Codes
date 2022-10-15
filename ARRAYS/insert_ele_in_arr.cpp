@@ -1,26 +1,44 @@
-// Status = Working
+// Status = Done using OOPS concept
 
- // Program to Insert Elememt in Array (Insertion in Array) 
+// Insert an Element in Array by Entering Size & Elements of Array.
 #include<iostream>
 using namespace std;
 
+class myClass
+{
+   int arr_size, i;
+   //Dynamic Memory Allocated to Array
+   int *arr = new int[arr_size];
+
+   public:
+   void inserting_arr(int a)
+   {
+      arr_size = a;
+      cout<<"\nEnter the Elements of an Array\n";
+      for(i=0; i<arr_size; i++)
+      {
+         cin>>arr[i];
+      }
+   }
+
+   void printing_arr()
+   {
+      for(i=0; i<arr_size; i++)
+      {
+         cout<<arr[i]<<" ";
+      }
+      cout<<"\nElements Printed Successfully!\n";
+   }
+};
+
 int main()
 {
- // Array Size Declared
- int size=0;
- cout<<"\nEnter the Size of Array\n";
- cin>>size;
+   // Class Object
+   myClass c1;
 
- // Array Element Inserted
-int arr[size];
-  cout<<"\nEnter the Elements of Array\n";
- for(int i=0; i<size; i++){
-  cin>>arr[i];
- }
-
- // Array Element Displayed for Checking is Element Inserted or not
- for(int i=0; i<size; i++){
-  cout<<arr[i]<<" ";
- }
-return 0;
+   int input;
+   cout<<"\nEnter the Size of Array\n";
+   cin>>input;
+   c1.inserting_arr(input);
+   c1.printing_arr();
 }

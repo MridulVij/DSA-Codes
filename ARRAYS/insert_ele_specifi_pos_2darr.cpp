@@ -1,76 +1,109 @@
+//Status = Complete
+
 // Program to Insert Elements in Specific Position of an 2D Array
 
 #include <iostream>
 using namespace std;
 
+class my2dclass
+{
+  int row_size, column_size;
+  int ele_2darrays;
+  int i,j;
+  int row,column;
+  // Dynamic Memory Allocation of 2d Array
+  int arr[][];// pending
+
+public:
+  void input2d_array(int r, int c)
+  {
+    
+    row_size = r;
+    column_size = c;
+
+    for (int i = 0; i < row_size; i++) 
+    {
+        
+    }
+
+    cout<<"\nEnter the 2d Arrays Elements\n";
+    for(i=0; i<row_size; i++)
+    {
+      cout<<"Row"<<i+1<<"\n";
+      for(j=0; j<column_size; j++)
+      {
+      cout<<"Column"<<j+1<<"\n";
+        cin>>arr[i][j];
+      }
+    }
+  }
+
+
+
+  void output2d_array()
+  {
+    for(i=0; i<row_size; i++)
+    {
+      for(j=0; j<column_size; j++)
+      {
+        cout<<arr[i][j]<<" ";
+      }
+      cout<<"\n";
+    }
+    cout<<"\nElements Printed Successfully\n";
+  }
+
+
+
+  void specificpos2d_array(int r1, int c1, int ele)
+  {
+    row = r1;
+    column = c1;
+    ele_2darrays = ele;
+
+    for(i=0; i<row_size-1; i++)
+    {
+      for(j=0; j<column_size-1; j++)
+      {
+       arr[i][j];
+      }
+      arr[row][column] = ele_2darrays;
+    }
+
+    for(i=0; i<row_size; i++)
+    {
+      for(j=0; j<column_size; j++)
+      {
+        cout<<arr[i][j]<<" ";
+      }
+      cout<<"\n";
+    }
+    cout<<"\nElements Printed Successfully after Specific Position Update\n";
+}
+};
+
 int main()
 {
- int r,c;
- int ele_value;
+//Class Object Created
+my2dclass c2d;
 
- cout<<"\nEnter the Rows for Array\n";
- cin>>r;
- cout<<"\nEnter the Columns for Arrays\n";
- cin>>c;
+int r,c,s_r,s_c,ele_2darray;
 
- // Array Declared & Taking input of Rows and Columns
- int i, j;
- int arr[r][c];
-  for(i=0; i<r; i++)
-  {
-  cout<<i<<" "<<"Row Started\n";
-   for(j=0; j<c; j++)
-   {
-   cout<<j<<" "<<"Column Started\n";
-   cin>>arr[i][j];
-   }
-   cout<<"\n";
-  }
+cout<<"\nEnter the Row of 2d Array\n";
+cin>>r;
+cout<<"\nEnter the Column of 2d Array\n";
+cin>>c;
+c2d.input2d_array(r,c);
+c2d.output2d_array();
 
-
- // Printing Rows and Columns of 2D Arrays
-  cout<<i<<" "<<"Row Started\n";
-  cout<<j<<" "<<"Column Started\n";
-  for(i=0; i<r; i++)
-  {
-   for(j=0; j<c; j++)
-   {
-   cout<<arr[i][j]<<" ";
-   }
-   cout<<"\n";
-  }
-
- // Insert element in Specific position of 2D array
- cout<<"\nEnter Specific Position of Rows for Array\n";
- cin>>r;
- cout<<"\nEnter Specific Position of Columns for Array\n";
- cin>>c;
-
-cout<<"\nEnter the 'Element Value' to Insert\n";
-cin>>ele_value;
-
-for(int i=r-1; i>=r-1; i--){
-for(int i=c-1; i>=c-1; i--)
- {
- arr[i+1][j+1]=arr[i][j]; // shifting index value >>
- }
-c++; // first increase Size of array
-arr[r-1][c-1]=ele_value; // then put element inside array
-}
-
-
- // Printing Rows and Columns of 2D Arrays
-  cout<<i<<" "<<"Row Started\n";
-  cout<<j<<" "<<"Column Started\n";
-  for(i=0; i<r; i++)
-  {
-   for(j=0; j<c; j++)
-   {
-   cout<<arr[i][j]<<" ";
-   }
-   cout<<"\n";
-  }
-
+//take input to reach specific position of row and column of 2d array 
+cout<<"\nEnter Specific Position of ROW\n";
+cin>>s_r;
+cout<<"\nEnter Specific Position of COLUMN\n";
+cin>>s_c;
+cout<<"\nEnter Specific Element of 2d Array\n";
+cin>>ele_2darray;
+c2d.specificpos2d_array(s_r,s_c,ele_2darray);
 
 return 0;
 }
