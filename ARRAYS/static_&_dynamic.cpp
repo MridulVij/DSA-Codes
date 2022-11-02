@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
 
+//Static = the size will not be changed
+
+//dynamic = the size will change according to requirement
+
 int main()
 {
 // Memory allocation & Variable Declaration

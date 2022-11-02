@@ -1,4 +1,4 @@
-// Status = Done using OOPS concept
+// Status = Complete
 
 // Insert an Element in Array by Entering Size & Elements of Array.
 #include<iostream>

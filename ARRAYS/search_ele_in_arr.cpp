@@ -1,4 +1,4 @@
-// Status = Working
+// Status = Complete
 
 // Program to Searching Element in Array (Searching in Array) // pending
 #include <iostream>

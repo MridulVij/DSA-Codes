@@ -1,0 +1,17 @@
+
+
+Logical AND operator
+
+0 && 0 - 0
+0 && 1 - 0
+1 && 0 - 0
+1 && 1 - 1
+
+
+Logical OR operator
+
+0 || 0 - 0
+1 || 0 - 1
+0 || 1 - 1
+1 || 1 - 1
+

@@ -23,7 +23,7 @@ public:
 
     for (int i = 0; i < row_size; i++) 
     {
-        
+        // pending
     }
 
     cout<<"\nEnter the 2d Arrays Elements\n";

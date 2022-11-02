@@ -1,4 +1,4 @@
-// Status = 
+// Status = Complete
 
 // Program to Reverse an array (Reverse an Array)
 #include<iostream>
@@ -11,7 +11,7 @@ int main(){
  cout<<"\nEnter the Size of Array\n";
  cin>>size;
  long arr[size];
- cout<<"\nEnter the "<<n++<<" Element of Array\n";
+ cout<<"\nEnter the Element of Array\n";
  for(int i=0; i<size; i++)
  {
   cin>>arr[i];

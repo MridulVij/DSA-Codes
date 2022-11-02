@@ -1,3 +1,5 @@
+// Status = Complete
+
 // Program to using pointers with arrays
 #include <iostream>
 using namespace std;

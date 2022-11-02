@@ -1,17 +1,15 @@
+// Status = Pending
+
 
 // Delete an element only 1 time by swapping its specific index in array
 #include <iostream>
 using namespace std;
 
-// Program START from here.
 int main()
 {
 
 // Array Size & Variables Declared
 int arr_size, spec_index, ele_value, del_pos;
-//int spec_index;
-//int ele_value;
-//int del_pos;
 cin>>arr_size;
 int arr[arr_size];
 
@@ -27,35 +25,35 @@ for(int i=0; i<arr_size; i++)
 cout<<"\n";
 
 
-// Element inserted in specific index of array given by user.
-// (Sol - it requires (i>=spec_index-1) & arr[i+1]=arr[i] )
-cout<<"\nEnter the 'Specific Position' Value of Array\n";
-cin>>spec_index;
-cout<<"\nEnter the 'Element Value' to Insert\n";
-cin>>ele_value;
-if(spec_index<=0 || spec_index>arr_size)
-{
- cout<<"Invalid Pos"<<"\n";
-}
-else
-{
-for(int i=arr_size-1; i>=spec_index-1; i--) // making position as index for ex - position 2-1=1 index
+// // Element inserted in specific index of array given by user.
+// // (Sol - it requires (i>=spec_index-1) & arr[i+1]=arr[i] )
+// cout<<"\nEnter the 'Specific Position' Value of Array\n";
+// cin>>spec_index;
+// cout<<"\nEnter the 'Element Value' to Insert\n";
+// cin>>ele_value;
+// if(spec_index<=0 || spec_index>arr_size)
+// {
+//  cout<<"Invalid Pos"<<"\n";
+// }
+// else
+// {
+// for(int i=arr_size-1; i>=spec_index-1; i--) // making position as index for ex - position 2-1=1 index
 
- {
- arr[i+1]=arr[i]; // shifting index value >>
- }
-}
-arr_size++; // first increase Size of array
-arr[spec_index-1]=ele_value; // then put element inside array
+//  {
+//  arr[i+1]=arr[i]; // shifting index value >>
+//  }
+// }
+// arr_size++; // first increase Size of array
+// arr[spec_index-1]=ele_value; // then put element inside array
 
 
-// Element Displayed after Changed from Specific position
-cout<<"\nPrinting Changed Elements\n";
-for(int i=0; i<arr_size; i++)
- {
- cout<<arr[i]<<" ";
-}
-cout<<"\n";
+// // Element Displayed after Changed from Specific position
+// cout<<"\nPrinting Changed Elements\n";
+// for(int i=0; i<arr_size; i++)
+//  {
+//  cout<<arr[i]<<" ";
+// }
+// cout<<"\n";
   
 
 
@@ -79,10 +77,33 @@ arr_size--;
 // Element Displayed after Changed from Specific position
 cout<<"\nPrinting Changed Elements\n";
 for(int i=0; i<arr_size; i++)
- {
+{
  cout<<arr[i]<<" ";
 }
 cout<<"\n";
 
 return 0;
 }
+
+
+/*
+
+0 - FALSE
+1 - TRUE
+
+Logical AND operator
+
+0 && 0 - 0
+0 && 1 - 0
+1 && 0 - 0
+1 && 1 - 1
+
+
+Logical OR operator
+
+0 || 0 - 0
+1 || 0 - 1
+0 || 1 - 1
+1 || 1 - 1
+
+*/
