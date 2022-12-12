@@ -24,6 +24,7 @@ public:
  void Bubble_Sort()
  {
   for(i=0; i<size-1; i++){
+   // little difference is [size-1-i]
    for(j=0; j<size-1-i; j++){
     if(arr[j]>arr[j+1])
      {
